@@ -1,0 +1,798 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --rouge:red;
+    --blanche:white;
+    --noire:rgba(0,0,0,0.6);
+    --noireOrigin: black;
+    --gris:gray;
+    --orange: #f94503;
+
+    --police:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.page{
+    box-sizing: border-box;
+    background-color:  var(--blanche);
+    display: grid;
+    grid-template-rows: 1fr 20fr 1fr;
+    
+    font-family: var(--police);
+}
+
+.pourmenu{
+    display: none;
+}
+
+.page > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+}
+
+.page > div:nth-child(1) > div:nth-child(1){
+    background-image: url(images/images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    flex-grow: 2;
+    align-self: stretch;
+    margin-left: 5%;
+    /* flex-basis: 12%;hauteur */
+}
+/* block menu */
+.page > div:nth-child(1) > div:nth-child(2){ 
+    flex-grow: 1;
+    flex-shrink: 2;
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.page > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+    color: var(--rouge);
+}
+
+
+
+
+
+.page > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.page > div:nth-child(2) > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+    background-image:  linear-gradient(var(--noire),var(--noire)),url(images/images/baniere.jpeg);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 5;
+}
+
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--blanche);
+    margin: 2% 0;
+}
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--blanche);
+    margin: 0.1% 0;
+}
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--blanche);
+}
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4){
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--blanche);
+    margin: 4% 0;
+}
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1){
+    background-color: var(--orange);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blanche);
+    border: 1rem solid var(--orange);
+    border-radius: 3rem;
+    margin: 0.5% 4% 12% 0;
+    padding: 0 2%;
+}
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(2){
+
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blanche);
+    border: 0.1rem solid var(--blanche);
+    border-radius: 3rem;
+    margin: 0.5% 4% 12% 0;
+    padding: 1% 3% 1% 3%;
+}
+
+
+.page > div:nth-child(2) > div:nth-child(1){
+    position: relative;
+}
+
+.page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+    flex-grow: 5;
+    background-image: url(images/images/2telephones.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    padding: 30%;
+    position:absolute;
+    left: 20%;
+    top: 50%;
+}
+
+
+.page > div:nth-child(2) > div:nth-child(2){
+    border: solid 0.2rem var(--gris);
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 40%;
+}
+
+.page > div:nth-child(2) > div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+
+
+
+
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--gris);
+
+}
+
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2){
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 2rem;
+}
+
+/* .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1){
+    background-color: black;
+    background-image: url(images/images/RectangleImg2.png);
+    background-size:65%;
+    background-repeat: no-repeat;
+    padding: 20%;
+    flex-grow: 1;
+} */
+
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1){
+    background-color: var(--gris);
+    opacity: 0.5;
+    width: 25rem;
+    margin: 5%;
+    margin-left: 20%;
+    border: 2rem solid var(--blanche);
+    border-radius: 5em;
+    box-shadow: 1rem 1rem 2rem var(--noire);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+    background-color: var(--blanche);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    box-shadow:  0rem .2rem 0.01rem var(--noire);
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    width: 15%;
+    height: .5rem;
+    border-radius: 2rem;
+    background-color: var(--blanche);
+    box-shadow: .1rem .1rem var(--noire) inset;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+    width: .5rem;
+    height: .5rem;
+    border-radius: 2rem;
+    box-shadow: .1rem .1rem var(--noire) inset;
+    margin-left: 1rem;
+}
+
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+    background-image: url(images/images/Logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 6rem;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--noireOrigin);
+    margin-bottom: 10%;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1){
+    text-decoration: underline var(--rouge);
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2){
+    
+}
+
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+label{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 1.3rem;
+}
+
+input{
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: var(--gris);
+    box-shadow: .1rem -.1rem var(--noire) inset;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(5) {
+    color: var(--rouge);
+    margin: 10% 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(6) {
+    background-color: var(--rouge);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blanche);
+    border: 1rem solid var(--rouge);
+    border-radius: 3rem;
+    margin: 10% 4% 2% 0;
+    padding: 0 2%;
+}
+
+
+
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2){
+    margin: auto;
+    margin-left: 0;
+    width: 100%;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
+    color: var(--rouge);
+    font-size: 4rem;
+    margin: 1%;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2){
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 5% 1%;
+}
+.page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
+    color: var(--gris);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1%;
+}
+
+
+
+
+
+
+.page > div:nth-child(2) > div:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+
+    margin: 10%;
+    margin-right: 0;
+}
+.page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1){
+    color: var(--rouge);
+    font-size: 4rem;
+    margin: 1%;
+}
+.page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2){
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 5% 1%;
+}
+.page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(3){
+    color: var(--gris);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.page > div:nth-child(2) > div:nth-child(4) > div:nth-child(2){
+    background-image: url(images/images/RectangleImg3.png);
+    background-size: 88%;
+    background-repeat: no-repeat;
+    padding: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page > div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 5%;
+    border-top: 1rem var(--gris);
+}
+
+.page > div:nth-child(3) > div:nth-child(1){
+    background-image: url(images/images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    flex-grow: 5;
+    align-self: stretch;
+}
+
+
+.page > div:nth-child(3) > div:nth-child(2){
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.page > div:nth-child(3) > div:nth-child(2)> div:nth-child(1){
+    background-image: url(images/images/twinter.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    padding: 15%;
+}
+.page > div:nth-child(3) > div:nth-child(2)> div:nth-child(2){
+    background-image: url(images/images/Vector.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    padding: 15%;
+}
+.page > div:nth-child(3) > div:nth-child(2)> div:nth-child(3){
+    background-image: url(images/images/instagramicone.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    padding: 15%;
+
+}
+
+
+.page > div:nth-child(3) > div:nth-child(3){
+    font-size: 1.5rem;
+    flex-grow: 2;
+    align-self: center;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width:578px){
+    .page > div:nth-child(1) > div:nth-child(1){
+        background-size: 50%;
+        flex-grow: 0.2;
+    }
+
+
+      /* image banniere */
+      .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+        background-image: url();
+    }
+    /* texte bannier1 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        color: var(--noireOrigin);
+    }
+
+     /* texte bannier2 */
+     .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+        color: var(--noireOrigin);
+    }
+    /* text baniere 3 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+        color: var(--noireOrigin);
+    }
+    /* texte bannier4 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4){
+        color: var(--noireOrigin);
+    }
+    /* 2 bannier */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) {
+        flex-direction: column;
+        width: 35%;
+        margin: 0 auto;
+    }
+    /* bouton bannier1 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1){
+        font-size: 1rem;
+        border: 0.5rem solid var(--orange);
+        border-radius: 1.5rem;
+    }
+     /* bouton bannier2 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(2){
+        font-size: 1rem;
+        border: 0.5rem solid #f94503;
+        border-radius: 1.5rem;
+        color: var(--orange);
+    }
+    /* 2telephone */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+        margin-top: 13%;
+    }
+    /* footter */
+    .page > div:nth-child(3){
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+    .page > div:nth-child(3) > div:nth-child(2){
+        padding: 10%;
+        width: 75%;
+        padding-bottom:0 ;
+    }
+    .page > div:nth-child(3) > div:nth-child(2)> div:nth-child(1){
+        background-size: 80%;
+        padding: 10%;
+        padding-bottom:5% ;
+    }
+    .page > div:nth-child(3) > div:nth-child(2)> div:nth-child(2){
+        background-size: 60%;
+        padding: 10%;
+        padding-bottom:5% ;
+    }
+    .page > div:nth-child(3) > div:nth-child(2)> div:nth-child(3){
+        background-size: 80%;
+        padding: 10%;
+        padding-bottom:5% ;
+    
+    }
+
+
+
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2){
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 2rem;
+    }
+    
+    .page > div:nth-child(2) > div:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /* gestion menu */
+    .page{
+        grid-template-rows: 2.5fr 20fr 1fr;
+    }
+
+    .pourmenu{
+        margin-top: 10%;
+        margin-right: 5%;
+        display: block;
+        font-size: 3rem;
+    }
+    .page > div:nth-child(1){ 
+        padding: 0;
+    }
+    .page > div:nth-child(1) > div:nth-child(2){ 
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: -500%;
+        font-size: 2rem;
+        /* display: none; */
+    }
+
+
+    .page > div:nth-child(1) > div:nth-child(2).mobile-menu{
+        margin-left: 0;
+        background-color: #f94503;
+        opacity: .5;
+    }
+    /* fin gestion menu */
+    
+}
+
+
+@media screen and (max-width:992px){
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2){
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 2rem;
+    }
+
+    .page > div:nth-child(2) > div:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+
+    /* gestion menu */
+    /* .page > div:nth-child(1){
+        height: 60px;
+    }
+ 
+    .page > div:nth-child(1) > div:nth-child(2){ 
+        display: none;
+    }
+    .pourmenu{
+        font-size: 12rem;
+        display: flex;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    } */
+    /*  fin gestion menu */
+}
+
+@media screen and (max-width:1520px) {
+    /* image banniere */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+        background-size: 110%;
+    }
+
+    /* 2telephone */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+        top: 55%;
+    }
+    
+}
+@media screen and (max-width:1210px) {
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2){
+   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 2rem;
+    }
+    
+    .page > div:nth-child(2) > div:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+      /* image banniere */
+      .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+        background-size: 120%;
+    }
+
+    /* texte bannier2 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+        font-size: 4rem;
+    }
+    /* text baniere 3 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+        font-size: 4rem;
+    }
+
+    /* 2telephone */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+        top: 55%;
+    }
+    /* block login */
+    .page > div:nth-child(2) > div:nth-child(3){
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+    /* titre */
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
+        font-size: 5rem;
+    }
+
+    /* 3texte cote du telephone */
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
+        font-size: 3.5rem;
+    }
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2){
+        font-size: 3.5rem;
+    }
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
+        font-size: 2.5rem;
+    }
+    
+    /* block food */
+    .page > div:nth-child(2) > div:nth-child(4){
+        margin: 0 auto;
+    }
+}
+@media screen  and (max-width:1106px){
+    /* 2telephone */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+        top: 60%;
+    }
+}
+@media screen and (max-width:972px) {
+    /* texte bannier2 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+        font-size: 3rem;
+    }
+    /* text baniere 3 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+        font-size: 3rem;
+    }
+    /* titre */
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:790px) {
+    /* texte bannier1 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size: 1rem;
+    }
+
+     /* texte bannier2 */
+     .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+        font-size: 2rem;
+    }
+    /* text baniere 3 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+        font-size: 2rem;
+    }
+    /* texte bannier4 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4){
+        font-size: 1rem;
+    }
+    /* bouton bannier1 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(1){
+        font-size: 1rem;
+        border: 0.5rem solid var(--orange);
+        border-radius: 1.5rem;
+    }
+     /* bouton bannier2 */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) > div:nth-child(2){
+        font-size: 1.5rem;
+        border: 0.05rem solid var(--blanche);
+        border-radius: 1.5rem;
+    }
+    /* 2telephone */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+        top: 55%;
+    }
+    /* titre */
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
+        font-size: 3rem;
+    }
+
+    /* 3texte cote du telephone login */
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1){
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2){
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3){
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* 3texte cote du telephone food */
+    .page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(1){
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2){
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .page > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(3){
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:620px){
+    .page > div:nth-child(3) > div:nth-child(1){
+        display: none;
+    }
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1){
+        width: 20rem;
+        margin: 5%;
+    }
+    /* titre */
+    .page > div:nth-child(2) > div:nth-child(3) > div:nth-child(1){
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:414px){
+    /* 2telephone */
+    .page > div:nth-child(2) > div:nth-child(1) > div:nth-child(2){
+        margin-top: 25%;
+    }
+}
